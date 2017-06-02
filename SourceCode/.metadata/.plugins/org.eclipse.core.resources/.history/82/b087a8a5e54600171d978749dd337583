@@ -1,0 +1,10 @@
+package home.edu.vn.test;
+
+public class TestMainScreenUI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

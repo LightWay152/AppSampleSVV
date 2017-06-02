@@ -1,0 +1,726 @@
+package home.edu.vn.ui;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Image;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.border.Border;
+import javax.swing.border.TitledBorder;
+
+public class MainScreenUI extends JFrame {
+	JLabel lblHinhHuongDan, lblHuongDan, lblHinhTaiKhoan, lblQuanLyTaiKhoan,
+			lblHinhThongKeReturn, lblThongKeReturn, lblHinhBaoCaoTaiSan,
+			lblBaoCaoTaiSan, lblHinhLenhMuaBanCK, lblLenhMuaBanCK,
+			lblHinhLenhNapRutTien, lblLenhNapRutTien, lblHinhHoTro, lblHoTro,
+			lblHinhThoat, lblThoat;
+
+	public MainScreenUI(String title) {
+		super(title);
+		addControls();
+		addEvents();
+	}
+
+	private void addEvents() {
+		lblHinhThoat.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyThoatPhanMem();
+			}
+		});
+		lblThoat.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyThoatPhanMem();
+			}
+		});
+
+		lblHinhHuongDan.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyHuongDan();
+			}
+		});
+		lblHuongDan.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyHuongDan();
+			}
+		});
+
+		lblHinhTaiKhoan.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyQuanLyTaiKhoan();
+			}
+		});
+		lblQuanLyTaiKhoan.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyQuanLyTaiKhoan();
+			}
+		});
+
+		lblHinhThongKeReturn.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyThongKeReturn();
+			}
+		});
+		lblThongKeReturn.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyThongKeReturn();
+			}
+		});
+
+		lblHinhBaoCaoTaiSan.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyBaoCaoTaiSan();
+			}
+		});
+		lblBaoCaoTaiSan.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyBaoCaoTaiSan();
+			}
+		});
+
+		lblHinhLenhMuaBanCK.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyLenhMuaBanCK();
+			}
+		});
+		lblLenhMuaBanCK.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				xuLyLenhMuaBanCK();
+			}
+		});
+
+		lblHinhLenhNapRutTien.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		lblLenhNapRutTien.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+
+		lblHinhHoTro.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		lblHoTro.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+
+	}
+
+	protected void xuLyThoatPhanMem() {
+		// TODO Auto-generated method stub
+		int ret = JOptionPane.showConfirmDialog(null,
+				"Bạn có chắc chắc muốn thoát phần mềm này không?",
+				"Xác nhận thoát", JOptionPane.YES_NO_OPTION);
+		if (ret == JOptionPane.YES_OPTION) {
+			System.exit(0);
+		}
+	}
+
+	private void addControls() {
+		Container con = getContentPane();
+		con.setLayout(new BorderLayout());
+
+		JPanel pnQuanLyDanhMucDauTu = new JPanel();
+		pnQuanLyDanhMucDauTu.setLayout(new BorderLayout());
+		con.add(pnQuanLyDanhMucDauTu);
+
+		JPanel pnNorth = new JPanel();
+		// pnNorth.setBackground(Color.YELLOW);
+		pnNorth.setPreferredSize(new Dimension(0, 180));
+		JPanel pnSouth = new JPanel();
+		// pnSouth.setBackground(Color.RED);
+		pnSouth.setPreferredSize(new Dimension(0, 50));
+		JPanel pnWest = new JPanel();
+		// pnWest.setBackground(Color.BLUE);
+		pnWest.setPreferredSize(new Dimension(100, 0));
+		JPanel pnEast = new JPanel();
+		// pnEast.setBackground(Color.BLUE);
+		pnEast.setPreferredSize(new Dimension(100, 0));
+		JPanel pnCenter = new JPanel();
+		// pnCenter.setBackground(Color.GREEN);
+
+		pnQuanLyDanhMucDauTu.add(pnNorth, BorderLayout.NORTH);
+		pnQuanLyDanhMucDauTu.add(pnSouth, BorderLayout.SOUTH);
+		pnQuanLyDanhMucDauTu.add(pnWest, BorderLayout.WEST);
+		pnQuanLyDanhMucDauTu.add(pnEast, BorderLayout.EAST);
+		pnQuanLyDanhMucDauTu.add(pnCenter, BorderLayout.CENTER);
+
+		Border borderTieuDe = BorderFactory.createLineBorder(Color.GRAY);
+		TitledBorder titledBorderTieuDe = new TitledBorder(borderTieuDe,
+				"Quản lý danh mục đầu tư");
+		pnQuanLyDanhMucDauTu.setBorder(titledBorderTieuDe);
+		titledBorderTieuDe.setTitleColor(Color.BLUE);
+		titledBorderTieuDe.setTitleJustification(TitledBorder.CENTER);
+
+		JLabel lblHinhNen = new JLabel();
+		ImageIcon imgHinhNen = new ImageIcon("images/stockmarket.png");
+		lblHinhNen.setIcon(imgHinhNen);
+		lblHinhNen.setPreferredSize(new Dimension(750, 150));
+		pnNorth.add(lblHinhNen);
+
+		JPanel pnLeftOfCenter = new JPanel();
+		pnLeftOfCenter
+				.setLayout(new BoxLayout(pnLeftOfCenter, BoxLayout.Y_AXIS));
+		JPanel pnRightOfCenter = new JPanel();
+		pnRightOfCenter.setLayout(new BoxLayout(pnRightOfCenter,
+				BoxLayout.Y_AXIS));
+		pnCenter.add(pnLeftOfCenter);
+		pnCenter.add(pnRightOfCenter);
+
+		JPanel pnLeftOfCenter1 = new JPanel();
+		pnLeftOfCenter1.setLayout(new FlowLayout(FlowLayout.LEFT));
+		lblHinhHuongDan = new JLabel();
+		ImageIcon imgHinhHuongDan = new ImageIcon("images/guide.png");
+		lblHinhHuongDan.setIcon(imgHinhHuongDan);
+		lblHinhHuongDan.setPreferredSize(new Dimension(64, 64));
+		lblHuongDan = new JLabel("Giới thiệu & Hướng dẫn");
+
+		pnLeftOfCenter1.add(lblHinhHuongDan);
+		pnLeftOfCenter1.add(lblHuongDan);
+		pnLeftOfCenter.add(pnLeftOfCenter1);
+
+		JPanel pnLeftOfCenter2 = new JPanel();
+		pnLeftOfCenter2.setLayout(new FlowLayout(FlowLayout.LEFT));
+		lblHinhTaiKhoan = new JLabel();
+		ImageIcon imgTaiKhoan = new ImageIcon("images/user.png");
+		lblHinhTaiKhoan.setIcon(imgTaiKhoan);
+		lblHinhTaiKhoan.setPreferredSize(new Dimension(64, 64));
+		lblQuanLyTaiKhoan = new JLabel("Quản lý tài khoản");
+
+		pnLeftOfCenter2.add(lblHinhTaiKhoan);
+		pnLeftOfCenter2.add(lblQuanLyTaiKhoan);
+		pnLeftOfCenter.add(pnLeftOfCenter2);
+
+		JPanel pnLeftOfCenter3 = new JPanel();
+		pnLeftOfCenter3.setLayout(new FlowLayout(FlowLayout.LEFT));
+		lblHinhThongKeReturn = new JLabel();
+		ImageIcon imgReturn = new ImageIcon("images/thongke.png");
+		lblHinhThongKeReturn.setIcon(imgReturn);
+		lblHinhThongKeReturn.setPreferredSize(new Dimension(64, 64));
+		lblThongKeReturn = new JLabel("Thống kê Return tháng & năm");
+
+		pnLeftOfCenter3.add(lblHinhThongKeReturn);
+		pnLeftOfCenter3.add(lblThongKeReturn);
+		pnLeftOfCenter.add(pnLeftOfCenter3);
+
+		JPanel pnLeftOfCenter4 = new JPanel();
+		pnLeftOfCenter4.setLayout(new FlowLayout(FlowLayout.LEFT));
+		lblHinhBaoCaoTaiSan = new JLabel();
+		ImageIcon imgBaoCaoTaiSan = new ImageIcon("images/report.png");
+		lblHinhBaoCaoTaiSan.setIcon(imgBaoCaoTaiSan);
+		lblHinhBaoCaoTaiSan.setPreferredSize(new Dimension(64, 64));
+		lblBaoCaoTaiSan = new JLabel("Báo cáo tài sản");
+
+		pnLeftOfCenter4.add(lblHinhBaoCaoTaiSan);
+		pnLeftOfCenter4.add(lblBaoCaoTaiSan);
+		pnLeftOfCenter.add(pnLeftOfCenter4);
+
+		JPanel pnRightOfCenter1 = new JPanel();
+		pnRightOfCenter1.setLayout(new FlowLayout(FlowLayout.LEFT));
+		lblHinhLenhMuaBanCK = new JLabel();
+		ImageIcon imgChungKhoan = new ImageIcon("images/cart.png");
+		lblHinhLenhMuaBanCK.setIcon(imgChungKhoan);
+		lblHinhLenhMuaBanCK.setPreferredSize(new Dimension(64, 64));
+		lblLenhMuaBanCK = new JLabel("Lệnh mua/bán chứng khoán");
+
+		pnRightOfCenter1.add(lblHinhLenhMuaBanCK);
+		pnRightOfCenter1.add(lblLenhMuaBanCK);
+		pnRightOfCenter.add(pnRightOfCenter1);
+
+		JPanel pnRightOfCenter2 = new JPanel();
+		pnRightOfCenter2.setLayout(new FlowLayout(FlowLayout.LEFT));
+		lblHinhLenhNapRutTien = new JLabel();
+		ImageIcon imgTien = new ImageIcon("images/money.png");
+		lblHinhLenhNapRutTien.setIcon(imgTien);
+		lblHinhLenhNapRutTien.setPreferredSize(new Dimension(64, 64));
+		lblLenhNapRutTien = new JLabel("Lệnh nạp/rút tiền");
+
+		pnRightOfCenter2.add(lblHinhLenhNapRutTien);
+		pnRightOfCenter2.add(lblLenhNapRutTien);
+		pnRightOfCenter.add(pnRightOfCenter2);
+
+		JPanel pnRightOfCenter3 = new JPanel();
+		pnRightOfCenter3.setLayout(new FlowLayout(FlowLayout.LEFT));
+		lblHinhHoTro = new JLabel();
+		ImageIcon imgThoat2 = new ImageIcon("images/support.png");
+		lblHinhHoTro.setIcon(imgThoat2);
+		lblHinhHoTro.setPreferredSize(new Dimension(64, 64));
+		lblHoTro = new JLabel("Hỗ trợ");
+
+		pnRightOfCenter3.add(lblHinhHoTro);
+		pnRightOfCenter3.add(lblHoTro);
+		pnRightOfCenter.add(pnRightOfCenter3);
+
+		JPanel pnRightOfCenter4 = new JPanel();
+		pnRightOfCenter4.setLayout(new FlowLayout(FlowLayout.LEFT));
+		lblHinhThoat = new JLabel();
+		ImageIcon imgThoat = new ImageIcon("images/logout.png");
+		lblHinhThoat.setIcon(imgThoat);
+		lblHinhThoat.setPreferredSize(new Dimension(64, 64));
+		lblThoat = new JLabel("Thoát chương trình");
+
+		pnRightOfCenter4.add(lblHinhThoat);
+		pnRightOfCenter4.add(lblThoat);
+		pnRightOfCenter.add(pnRightOfCenter4);
+
+	}
+
+	public void showWindow() {
+		this.setSize(750, 600);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setResizable(false);
+		this.setVisible(true);
+	}
+}
